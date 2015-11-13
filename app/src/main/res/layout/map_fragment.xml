@@ -1,0 +1,72 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/meter_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/meterLayoutColor"
+        android:orientation="vertical"
+        app:layout_heightPercent="18%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="80%"
+        app:layout_widthPercent="90%">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="50%">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/map_meter"
+                android:textColor="@color/mapTextViewColor"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/runned_meters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/map_meter_value"
+                android:textColor="@color/mapTextViewColor"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/startButton"
+            android:text="@string/map_start_button"
+            android:textColor="@color/mapButtonTextColor"
+            android:textSize="30sp"
+            app:layout_marginTopPercent="50%"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="100%"/>
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/stopButton"
+            android:text="@string/map_stop_button"
+            android:textColor="@color/mapButtonTextColor"
+            android:textSize="30sp"
+            android:visibility="invisible"
+            app:layout_marginTopPercent="50%"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="100%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

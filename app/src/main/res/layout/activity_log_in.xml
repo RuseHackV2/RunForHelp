@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="45%"
+        app:layout_marginTopPercent="13%"/>
+
+    <LinearLayout
+        android:id="@+id/register_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_heightPercent="18%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="55%"
+        app:layout_widthPercent="90%">
+
+        <EditText
+            android:id="@+id/user_email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            app:layout_marginTopPercent="35%" />
+
+        <EditText
+            android:id="@+id/user_password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_email_edit_text"
+            android:backgroundTint="@android:color/white"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:text="@string/password_text"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/log_in_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/register_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"
+        android:text="@string/login_button"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_heightPercent="7%"
+        app:layout_marginLeftPercent="20%"
+        app:layout_widthPercent="60%" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/facebook_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_in_button"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="5%" />
+
+    <TextView
+        android:id="@+id/create_account_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@id/facebook_login_button"
+        android:layout_centerHorizontal="true"
+        android:text="@string/create_account"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_heightPercent="5%"
+        app:layout_marginTopPercent="5%" />
+
+</android.support.percent.PercentRelativeLayout>

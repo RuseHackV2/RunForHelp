@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#42a5f5</color>
+    <color name="colorPrimaryDark">#42a5f5</color>
+    <color name="colorAccent">#42a5f5</color>
+
+    <color name="tabsScrollColor">#ffffff</color>
+    <color name="toolBarColor">#42a5f5</color>
+
+    <color name="startButton">#13bc19</color>
+    <color name="stopButton">#e53935</color>
+    <color name="mapTextViewColor">#000000</color>
+    <color name="mapButtonTextColor">#ffffff</color>
+    <color name="meterLayoutColor">#ffffff</color>
+
+</resources>

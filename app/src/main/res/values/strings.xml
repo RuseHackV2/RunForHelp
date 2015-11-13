@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">RunForHelp</string>
+    <string name="email_hint">stanimir.t.nikolov@gmail.com</string>
+    <string name="password_hint">PASSWORD</string>
+    <string name="password_text">password</string>
+    <string name="login_button">Log In</string>
+    <string name="create_account">Don\'t have na account? Create one.</string>
+
+    <string name="facebook_app_id">1644475999163208</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="map_meter">Meters: </string>
+    <string name="map_meter_value">0,0 m</string>
+    <string name="map_start_button">Start</string>
+    <string name="map_stop_button">Stop</string>
+
+</resources>
